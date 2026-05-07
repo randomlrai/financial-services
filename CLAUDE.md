@@ -44,8 +44,10 @@ Run `python3 scripts/check.py` before committing — it lints every manifest, ve
 1. Edit markdown files directly - changes take effect immediately
 2. Test commands with `/plugin:command-name` syntax
 3. Skills are invoked automatically when their trigger conditions match
+4. After adding a new vertical, run `sync-agent-skills.py` before `check.py` — running them in the wrong order will always fail the drift check on new skills.
 
 ## Personal Notes
 
 - I'm using this fork primarily to study the agent-plugin structure and how `sync-agent-skills.py` keeps skill bundles in sync.
 - Reminder: always run `check.py` before pushing — I've been burned by drifted skills copies before.
+- Agents I've been focusing on: `equity-research-analyst`, `credit-risk-assessor`. Good starting points for understanding the subagent pattern.
