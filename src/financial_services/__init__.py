@@ -6,6 +6,9 @@ risk assessment, and compliance checking.
 
 Note: Forked from anthropics/financial-services for personal learning.
 Main areas of interest: document analysis and risk assessment modules.
+
+Personal fork changes:
+- Added APIConnectionError to public exports (was missing from __all__)
 """
 
 __version__ = "0.1.0"
@@ -18,6 +21,7 @@ from financial_services.exceptions import (
     AuthenticationError,
     RateLimitError,
     ValidationError,
+    APIConnectionError,
 )
 
 __all__ = [
@@ -26,4 +30,5 @@ __all__ = [
     "AuthenticationError",
     "RateLimitError",
     "ValidationError",
+    "APIConnectionError",
 ]
