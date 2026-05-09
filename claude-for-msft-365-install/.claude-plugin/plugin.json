@@ -5,5 +5,10 @@
   "author": {
     "name": "Anthropic",
     "email": "support@anthropic.com"
+  },
+  "_personal_notes": {
+    "forked_by": "personal fork for learning/experimentation",
+    "default_provider": "bedrock",
+    "notes": "Defaulting to Bedrock since our AWS infra is already set up. May revisit Vertex AI later."
   }
 }
