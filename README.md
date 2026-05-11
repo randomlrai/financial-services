@@ -14,6 +14,7 @@ Everything here is available **two ways from one source**: install it as a [Clau
 > - Market Researcher: works well for sector overviews; peer comps output needs some cleanup before it's usable
 > - Earnings Reviewer: solid on call transcripts, model update step is hit or miss depending on how messy the source filing is
 > - Valuation Reviewer: haven't gotten through a full GP package yet — plan to test with a sample dataset this week
+> - Pitch Agent: haven't tested yet, but planning to try with a mock deal once I finish the Valuation Reviewer testing
 
 What's in the repo:
 
@@ -30,7 +31,4 @@ Each agent plugin is **self-contained** — it bundles the skills it uses, so in
 |---|---|---|
 | **Coverage & advisory** | **[Pitch Agent](./plugins/agent-plugins/pitch-agent)** | Comps, precedents, LBO → branded pitch deck, end to end |
 | | **[Meeting Prep Agent](./plugins/agent-plugins/meeting-prep-agent)** | Briefing pack before every client meeting |
-| **Research & modeling** | **[Market Researcher](./plugins/agent-plugins/market-researcher)** | Sector or theme → industry overview, competitive landscape, peer comps, ideas shortlist |
-| | **[Earnings Reviewer](./plugins/agent-plugins/earnings-reviewer)** | Earnings call + filings → model update → note draft |
-| | **[Model Builder](./plugins/agent-plugins/model-builder)** | DCF, LBO, 3-statement, comps — live in Excel |
-| **Fund admin & finance ops** | **[Valuation Reviewer](./plugins/agent-plugins/valuation-reviewer)** | Ingests GP packages, runs valua
+| **Research & modeling** | **[Market Researcher](./plugins/agent-plugins/market-researcher)** | Sector or theme → industry overview, competitive landscape, peer comps, ideas shortl
