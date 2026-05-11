@@ -9,6 +9,8 @@ Main areas of interest: document analysis and risk assessment modules.
 
 Personal fork changes:
 - Added APIConnectionError to public exports (was missing from __all__)
+- Added ConnectionTimeoutError to public exports for better error handling
+- Exposed __version__ in __all__ for easier version checking
 """
 
 __version__ = "0.1.0"
@@ -25,6 +27,7 @@ from financial_services.exceptions import (
 )
 
 __all__ = [
+    "__version__",  # handy for quick version checks: financial_services.__version__
     "FinancialServicesClient",
     "FinancialServicesError",
     "AuthenticationError",
